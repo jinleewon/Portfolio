@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section className="bg-[#0a0e27] border-t border-[#1e295d] py-[100px] px-6 md:px-[120px] w-full">
-      <div className="flex flex-col gap-[48px] max-w-[1680px] mx-auto">
+      <div className="flex flex-col gap-[48px] max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="flex items-center gap-[10px]">
           <div className="bg-[#2563eb] h-[4px] w-[16px] rounded-[2px]" />

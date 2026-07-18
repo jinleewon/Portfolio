@@ -4,7 +4,8 @@ import { Mail, Phone, Code } from 'lucide-react';
 const Contact = () => {
   return (
     <section id="contact" className="bg-[#0a0e27] border-t border-[#1e295d] py-24 px-6 md:px-[120px] w-full">
-      <div className="flex flex-col gap-4 mb-12">
+      <div className="max-w-[1440px] mx-auto w-full">
+        <div className="flex flex-col gap-4 mb-12">
         <div className="flex items-center gap-2">
           <div className="bg-brand-blue w-4 h-1 rounded-full" />
           <span className="text-brand-blue font-bold text-base uppercase tracking-wider">Contact</span>
@@ -56,6 +57,7 @@ const Contact = () => {
             코드 저장소 방문
           </a>
         </div>
+      </div>
       </div>
     </section>
   );

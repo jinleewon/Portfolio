@@ -42,7 +42,7 @@ const Proposals = () => {
 
   return (
     <section id="proposals" className="bg-[#0a0e27] border-t border-[#1e295d] py-[100px] px-6 md:px-[120px] w-full">
-      <div className="max-w-[1680px] mx-auto flex flex-col gap-[48px]">
+      <div className="max-w-[1440px] mx-auto flex flex-col gap-[48px]">
         
         {/* Header */}
         <div className="flex flex-col gap-[12px]">
