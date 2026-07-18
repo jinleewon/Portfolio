@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft, CheckCircle2, Layout, Database, Grid, Archive, Smartphone, Wifi, ClipboardCheck, Box, FileText, Mic, Settings } from 'lucide-react';
+import { CheckCircle2, Layout, Database, Grid, Archive, Smartphone, Wifi, ClipboardCheck, Box, FileText, Mic, Settings } from 'lucide-react';
 
 const ProjectDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const goBack = () => {
-    window.history.back();
-  };
+
 
   const StageCard = ({ stage, title, desc, result }) => (
     <div className="bg-[#12183a] border border-[#26334d] p-[28px] rounded-[16px] flex flex-col gap-[16px] flex-1">
@@ -88,11 +86,7 @@ const ProjectDetails = () => {
     <div className="min-h-screen bg-[#0a0e27] font-sans pb-32">
       <div className="max-w-[1440px] mx-auto pt-[100px] px-6 md:px-[60px] xl:px-[120px]">
         
-        {/* Top Back Button */}
-        <button onClick={goBack} className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-12">
-          <ArrowLeft className="w-5 h-5" />
-          <span className="text-base font-medium">돌아가기</span>
-        </button>
+
 
         {/* INNOVATION SECTION */}
         <div className="flex flex-col gap-[16px] mb-12">

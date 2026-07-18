@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { Briefcase } from 'lucide-react';
 
 const Projects = () => {
@@ -93,7 +93,7 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projectList.map((project, idx) => (
-          <Link to="/project" key={idx} className="bg-[#12183a] border border-[#26334d] p-7 rounded-2xl flex flex-col hover:border-brand-blue/50 transition-all duration-300 group cursor-pointer h-auto md:h-[180px]">
+          <div key={idx} className="bg-[#12183a] border border-[#26334d] p-7 rounded-2xl flex flex-col hover:border-brand-blue/50 transition-all duration-300 group h-auto md:h-[180px]">
             
             <div className="flex justify-between items-center mb-4">
               <div className="bg-brand-blue/20 px-3 py-1.5 rounded-lg">
@@ -111,7 +111,7 @@ const Projects = () => {
               <span className="text-gray-400 text-[13px] font-medium">발주처: {project.client}</span>
             </div>
 
-          </Link>
+          </div>
         ))}
       </div>
       </div>
