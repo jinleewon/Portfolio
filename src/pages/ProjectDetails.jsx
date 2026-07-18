@@ -145,7 +145,7 @@ const ProjectDetails = () => {
             <BrowserMockup 
               title="국립중앙의료원 미디어 아카이브" 
               url="https://www.nmc.or.kr/archive/main" 
-              imgSrc="/assets/browser-content.png" 
+              imgSrc="./assets/browser-content.png" 
             />
             <a href="https://www.nmc.or.kr/archive/main" target="_blank" rel="noreferrer" className="bg-[#2563eb] hover:bg-blue-600 transition-colors px-[20px] py-[10px] rounded-[8px] flex items-center mr-auto">
               <p className="font-semibold text-[15px] text-white">사이트 바로가기 →</p>
@@ -189,7 +189,7 @@ const ProjectDetails = () => {
               <BrowserMockup 
                 title="한미동맹 70주년 기념 특별 사진전" 
                 url="https://theme.archives.go.kr/next/aliance/seventy/viewMain.do" 
-                imgSrc="/assets/project3-1.png" 
+                imgSrc="./assets/project3-1.png" 
               />
               <div className="bg-[#12183a] border border-[#1e295d] rounded-[12px] p-[16px] flex flex-col gap-[10px] w-full">
                 <div className="flex items-center justify-between">
@@ -224,7 +224,7 @@ const ProjectDetails = () => {
               <BrowserMockup 
                 title="우주로 가는 길을 찾다" 
                 url="https://theme.archives.go.kr/next/universe/viewMain.do" 
-                imgSrc="/assets/project3-2.png" 
+                imgSrc="./assets/project3-2.png" 
               />
               <div className="bg-[#12183a] border border-[#1e295d] rounded-[12px] p-[16px] flex flex-col gap-[10px] w-full">
                 <div className="flex items-center justify-between">
@@ -264,7 +264,7 @@ const ProjectDetails = () => {
             <BrowserMockup 
               title="국립한국문학관 자료관리시스템" 
               url="국립한국문학관 자료관리시스템" 
-              imgSrc="/assets/project4.png" 
+              imgSrc="./assets/project4.png" 
             />
           </div>
           
@@ -383,10 +383,10 @@ const ProjectDetails = () => {
         <div className="flex flex-col lg:flex-row gap-[64px] items-start">
           <div className="flex flex-col gap-[12px] w-full lg:w-[580px] shrink-0">
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[12px]">
-               <BrowserMockup title="MTIS 유물관리" url="mtis.museum.go.kr" imgSrc="/assets/mtis-1.png" wrapperClass="!border-0 shadow-none" />
-               <BrowserMockup title="MTIS 전시안내관리" url="mtis.museum.go.kr" imgSrc="/assets/mtis-2.png" wrapperClass="!border-0 shadow-none" />
-               <BrowserMockup title="MTIS 아카이브관리" url="mtis.museum.go.kr" imgSrc="/assets/mtis-3.png" wrapperClass="!border-0 shadow-none" />
-               <BrowserMockup title="MTIS 시스템 관리" url="mtis.museum.go.kr" imgSrc="/assets/mtis-4.png" wrapperClass="!border-0 shadow-none" />
+               <BrowserMockup title="MTIS 유물관리" url="mtis.museum.go.kr" imgSrc="./assets/mtis-1.png" wrapperClass="!border-0 shadow-none" />
+               <BrowserMockup title="MTIS 전시안내관리" url="mtis.museum.go.kr" imgSrc="./assets/mtis-2.png" wrapperClass="!border-0 shadow-none" />
+               <BrowserMockup title="MTIS 아카이브관리" url="mtis.museum.go.kr" imgSrc="./assets/mtis-3.png" wrapperClass="!border-0 shadow-none" />
+               <BrowserMockup title="MTIS 시스템 관리" url="mtis.museum.go.kr" imgSrc="./assets/mtis-4.png" wrapperClass="!border-0 shadow-none" />
              </div>
           </div>
           
