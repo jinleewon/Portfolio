@@ -1,7 +1,9 @@
 import React from 'react';
 import { Activity } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="flex flex-col items-center pt-32 pb-20 px-6 md:px-[120px] w-full bg-[#0a0e27]">
       <div className="flex flex-col items-center gap-6 max-w-4xl text-center">
@@ -19,10 +21,10 @@ const Hero = () => {
         </p>
         
         <div className="flex items-center gap-4 pt-3">
-          <button className="bg-brand-blue px-8 py-4 rounded-xl text-white font-semibold hover:bg-blue-700 transition-colors">
+          <button onClick={() => navigate('/project')} className="bg-brand-blue px-8 py-4 rounded-xl text-white font-semibold hover:bg-blue-700 transition-colors">
             View Projects
           </button>
-          <button className="border-2 border-[#1e295d] px-8 py-4 rounded-xl text-white font-semibold hover:bg-[#1e295d]/50 transition-colors">
+          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="border-2 border-[#1e295d] px-8 py-4 rounded-xl text-white font-semibold hover:bg-[#1e295d]/50 transition-colors">
             Contact Me
           </button>
         </div>

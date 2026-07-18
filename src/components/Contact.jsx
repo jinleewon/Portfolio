@@ -3,7 +3,7 @@ import { Mail, Phone, Code } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section className="bg-[#0a0e27] border-t border-[#1e295d] py-24 px-6 md:px-[120px] w-full">
+    <section id="contact" className="bg-[#0a0e27] border-t border-[#1e295d] py-24 px-6 md:px-[120px] w-full">
       <div className="flex flex-col gap-4 mb-12">
         <div className="flex items-center gap-2">
           <div className="bg-brand-blue w-4 h-1 rounded-full" />

@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +27,8 @@ const Navbar = () => {
   }, []);
 
   const isProjectPage = location.pathname.startsWith('/project');
+  const isToyProjectPage = location.pathname.startsWith('/toy-project');
+  const isAboutPage = location.pathname === '/';
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0e27]/90 backdrop-blur-md border-b border-brand-border py-4' : 'bg-transparent py-6'} px-6 md:px-[120px]`}>
@@ -28,16 +43,16 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-2">
-          <Link to="/" className={`px-4 py-2 text-sm font-medium transition-colors ${!isProjectPage ? 'text-white bg-brand-blue/15 rounded-lg' : 'text-gray-400 hover:text-white'}`}>
+          <Link to="/" className={`px-4 py-2 text-sm font-medium transition-colors ${isAboutPage ? 'text-white bg-brand-blue/15 rounded-lg' : 'text-gray-400 hover:text-white'}`}>
             About
           </Link>
           <Link to="/project" className={`px-4 py-2 text-sm font-medium transition-colors ${isProjectPage ? 'text-white bg-brand-blue/15 rounded-lg' : 'text-gray-400 hover:text-white'}`}>
             Project
           </Link>
-          <a href="/#toy-project" className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          <Link to="/toy-project" className={`px-4 py-2 text-sm font-medium transition-colors ${isToyProjectPage ? 'text-white bg-brand-blue/15 rounded-lg' : 'text-gray-400 hover:text-white'}`}>
             Toy Project
-          </a>
-          <a href="/#contact" className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          </Link>
+          <a href="/#contact" onClick={handleContactClick} className="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white transition-colors">
             Contact
           </a>
         </div>

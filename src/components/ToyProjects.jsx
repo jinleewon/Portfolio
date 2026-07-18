@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const ToyProjects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <section id="toy-project" className="bg-[#0a0e27] border-t border-[#1e295d] py-24 px-6 md:px-[120px] w-full">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-[#0a0e27] font-sans pb-32 w-full">
+      <div className="max-w-[1440px] mx-auto pt-[120px] px-6 md:px-[60px] xl:px-[120px]">
         <div className="flex flex-col gap-4 mb-20">
           <div className="flex items-center gap-2">
             <div className="bg-brand-blue w-4 h-1 rounded-full" />
@@ -45,7 +49,7 @@ const ToyProjects = () => {
             </div>
           </div>
           <div className="w-full lg:w-[560px] h-[380px] bg-[#12183a] border border-[#1e295d] rounded-[20px] overflow-hidden flex items-center justify-center relative shrink-0">
-            <img src="/assets/image 229.png" alt="포켓몬 스플랜더" className="absolute inset-0 w-full h-full object-contain p-4" 
+            <img src="/assets/project5-2.png" alt="포켓몬 스플랜더" className="absolute inset-0 w-full h-full object-contain p-4" 
                  onError={(e) => { e.target.src = '/assets/toy1.png'; e.target.onerror = null; }} />
           </div>
         </div>
@@ -94,10 +98,6 @@ const ToyProjects = () => {
                   {tech}
                 </span>
               ))}
-            </div>
-            <div className="mt-4 flex items-center gap-2 text-brand-blue font-semibold text-sm cursor-pointer hover:underline">
-              <span>View Detail</span>
-              <span>→</span>
             </div>
           </div>
         </div>
@@ -152,14 +152,14 @@ const ToyProjects = () => {
                 </div>
               </div>
               <div className="flex-1 bg-[#222] relative overflow-hidden">
-                <img src="/assets/browser-content.png" alt="부루마블" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/assets/project5-1.png" alt="부루마블" className="absolute inset-0 w-full h-full object-cover" />
               </div>
             </div>
           </div>
         </div>
 
       </div>
-    </section>
+    </div>
   );
 };
 
