@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0e27]/90 backdrop-blur-md border-b border-brand-border py-4' : 'bg-transparent py-6'} px-6 md:px-[120px]`}>
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between">
+      <div className="max-w-[1440px] mx-auto w-full flex items-center justify-between">
         
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg overflow-hidden relative">
