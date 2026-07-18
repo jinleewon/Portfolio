@@ -37,7 +37,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg overflow-hidden relative">
             <div className="absolute inset-0 bg-brand-blue/20 group-hover:bg-brand-blue/40 transition-colors" />
-            <img src="/assets/profile.png" alt="Logo" className="w-full h-full object-cover" onError={(e) => e.target.style.display='none'} />
+            <img src="./assets/profile.png" alt="Logo" className="w-full h-full object-cover" onError={(e) => e.target.style.display='none'} />
           </div>
           <span className="font-bold text-lg text-white tracking-wide">Planner Portfolio</span>
         </Link>

@@ -362,16 +362,16 @@ const ProjectDetails = () => {
             
             <div className="relative w-full lg:w-[560px] h-[400px] shrink-0 mt-[20px] lg:mt-0 flex justify-center">
                <div className="absolute top-0 left-0 lg:left-[0px] w-[145px] h-[314px] bg-[#1f1f24] rounded-[18px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.5)] p-[5px] z-10 border border-[#26334d]">
-                 <img src="/assets/phone-1.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
+                 <img src="./assets/phone-1.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
                </div>
                <div className="absolute top-[80px] left-[100px] lg:left-[138px] w-[145px] h-[314px] bg-[#1f1f24] rounded-[18px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.5)] p-[5px] z-20 border border-[#26334d]">
-                 <img src="/assets/phone-2.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
+                 <img src="./assets/phone-2.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
                </div>
                <div className="absolute top-0 left-[200px] lg:left-[277px] w-[145px] h-[314px] bg-[#1f1f24] rounded-[18px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.5)] p-[5px] z-30 border border-[#26334d]">
-                 <img src="/assets/phone-3.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
+                 <img src="./assets/phone-3.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
                </div>
                <div className="absolute top-[80px] left-[300px] lg:left-[415px] w-[145px] h-[314px] bg-[#1f1f24] rounded-[18px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.5)] p-[5px] z-40 border border-[#26334d]">
-                 <img src="/assets/phone-4.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
+                 <img src="./assets/phone-4.png" className="w-full h-full object-cover rounded-[14px]" alt="phone mockup" />
                </div>
             </div>
           </div>

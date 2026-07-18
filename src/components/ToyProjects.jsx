@@ -49,7 +49,7 @@ const ToyProjects = () => {
             </div>
           </div>
           <div className="w-full lg:w-[560px] h-[380px] bg-[#12183a] border border-[#1e295d] rounded-[20px] overflow-hidden flex items-center justify-center relative shrink-0">
-            <img src="/assets/project5-2.png" alt="포켓몬 스플랜더" className="absolute inset-0 w-full h-full object-contain p-4" 
+            <img src="./assets/project5-2.png" alt="포켓몬 스플랜더" className="absolute inset-0 w-full h-full object-contain p-4" 
                  onError={(e) => { e.target.src = '/assets/toy1.png'; e.target.onerror = null; }} />
           </div>
         </div>
@@ -63,17 +63,17 @@ const ToyProjects = () => {
             <div className="relative w-[340px] h-[390px]">
               {/* Phone 1 (Left) */}
               <div className="absolute left-0 top-[20px] w-[150px] h-[310px] bg-[#12183a] border border-[#1e295d] rounded-[24px] shadow-2xl overflow-hidden z-10 border-[6px] border-[#0d0d0d]">
-                <img src="/assets/image 230.png" alt="Mood Note 1" className="w-full h-full object-cover" 
+                <img src="./assets/image 230.png" alt="Mood Note 1" className="w-full h-full object-cover" 
                      onError={(e) => { e.target.src = '/assets/toy2-1.png'; e.target.onerror = null; }} />
               </div>
               {/* Phone 3 (Right) */}
               <div className="absolute right-0 top-[20px] w-[150px] h-[310px] bg-[#12183a] border border-[#1e295d] rounded-[24px] shadow-2xl overflow-hidden z-10 border-[6px] border-[#0d0d0d]">
-                <img src="/assets/image 232.png" alt="Mood Note 3" className="w-full h-full object-cover" 
+                <img src="./assets/image 232.png" alt="Mood Note 3" className="w-full h-full object-cover" 
                      onError={(e) => { e.target.src = '/assets/toy2-3.png'; e.target.onerror = null; }} />
               </div>
               {/* Phone 2 (Center - Top) */}
               <div className="absolute left-[85px] top-0 w-[170px] h-[350px] bg-[#12183a] border border-[#1e295d] rounded-[24px] shadow-[0_32px_64px_rgba(0,0,0,0.6)] overflow-hidden z-20 border-[6px] border-[#0d0d0d]">
-                <img src="/assets/image 231.png" alt="Mood Note 2" className="w-full h-full object-cover" 
+                <img src="./assets/image 231.png" alt="Mood Note 2" className="w-full h-full object-cover" 
                      onError={(e) => { e.target.src = '/assets/toy2-2.png'; e.target.onerror = null; }} />
               </div>
             </div>
@@ -152,7 +152,7 @@ const ToyProjects = () => {
                 </div>
               </div>
               <div className="flex-1 bg-[#222] relative overflow-hidden">
-                <img src="/assets/project5-1.png" alt="부루마블" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="./assets/project5-1.png" alt="부루마블" className="absolute inset-0 w-full h-full object-cover" />
               </div>
             </div>
           </div>

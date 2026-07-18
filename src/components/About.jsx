@@ -50,7 +50,7 @@ const About = () => {
           {/* Profile Image */}
           <div className="w-[300px] h-[300px] md:w-[352px] md:h-[352px] shrink-0 rounded-[39px] shadow-[0px_4px_16px_0px_rgba(0,0,0,0.2)] relative self-center lg:self-start">
             <img 
-              src="/assets/profile-image.png" 
+              src="./assets/profile-image.png" 
               alt="Profile" 
               className="absolute inset-0 w-full h-full object-cover rounded-[39px] transform -scale-x-100" 
               onError={(e) => {
